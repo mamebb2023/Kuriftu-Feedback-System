@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import logo from "../assets/logo.png";
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -23,7 +24,7 @@ const Header = () => {
       }`}
     >
       <div className="flex-1 flex items-center justify-center">
-        <img src="./src/assets/logo.png" alt="Logo" />
+        <img src={logo} alt="Logo" />
       </div>
       <nav>
         <a href="/feedback" className="font-bold">

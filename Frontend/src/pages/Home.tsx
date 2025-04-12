@@ -2,6 +2,10 @@ import PageLayout from "../layout/PageLayout";
 import { motion } from "framer-motion";
 import { useState } from "react";
 
+import water_park from "../assets/water-park.webp";
+import birthday from "../assets/birthday.webp";
+import tana from "../assets/tana.webp";
+
 const Home = () => {
   const [isMuted, setIsMuted] = useState(true);
 
@@ -134,21 +138,21 @@ const Home = () => {
             title: "Lake Tana",
             description:
               "Located in the capital of the Amhara Region, Bahirdar, Kuriftu Resort & Spa Lake Tana represents the Kuriftu brands second resort venture. As we seek to expand across Ethiopia, Lake Tana with its historic and cultural value was the perfect choice for expansion. Paired with scenic views, wildlife excursions and religious routes - this destination offers a new adventure for our Kuriftu family!",
-            image: "./src/assets/tana.webp",
+            image: tana,
             reverse: false,
           },
           {
             title: "Kuriftu Waterpark",
             description:
               "Whether you are looking to spend an afternoon of fun with family or friends, searching the perfect weekend getaway, planning a birthday or group event, or even surprising a loved one, Kuriftu Water Park is your ultimate choice for a premier entertainment destination with guaranteed fun!",
-            image: "./src/assets/water-park.webp",
+            image: water_park,
             reverse: true,
           },
           {
             title: "Birthday Celebrations",
             description:
               "Kuriftu Resorts, taking place in a beautifully decorated outdoor area. Children are gathered around a wooden table, surrounded by festive balloons, party decorations, and colorful hats. Adults are capturing the moment and enjoying the cheerful atmosphere. In the background, the vibrant water park and scenic setting add to the fun and lively mood of the occasion.",
-            image: "./src/assets/birthday.webp",
+            image: birthday,
             reverse: false,
           },
         ].map((section, index) => (
